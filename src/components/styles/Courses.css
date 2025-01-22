@@ -1,0 +1,97 @@
+.album {
+    background-color: #F3F4F8;
+}
+.card {
+    width: 430px !important;
+}
+.card-body {
+    height: 225px;
+    padding-top: 0px;
+}
+
+.card-text {
+    font-weight: bold;
+}
+
+.perImg {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.line {
+    margin-bottom: 0px;
+}
+
+.free {
+    padding-top: 8px;
+}
+
+.button {
+    border: none;
+}
+
+.courses {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.courses:hover {
+    box-shadow: 5px 6px 60px 2px #e9ecef;
+    transform: scale(1.05);
+}
+
+/* Mobile Styles */
+@media (max-width: 576px) {
+    .container {
+        margin: 0;
+    }
+    .col {
+        width: 470px;
+        
+    }
+    .courses{
+        width: auto;
+    }
+    .card-body {
+        height: 280px; /* Adjusted height for mobile */
+        
+    }
+    .perImg {
+        width: 40px; /* Smaller image for mobile */
+        height: 40px;
+    }
+    .free {
+        padding-top: 4px; /* Less padding for mobile */
+    }
+}
+
+/* Tablet to Desktop Styles */
+@media (min-width: 577px) and (max-width: 991px) {
+    .card-body {
+        height: 200px; /* Adjusted height for tablets */
+    }
+    .row-cols-md-3 {
+        /* Ensures 3 columns in medium screens (tablets) */
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 992px) {
+    .card {
+        width: 420px;
+    }
+    .card-body {
+        height: 225px; /* Default height for large screens */
+    }
+    .courses {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .row-cols-lg-3 {
+        /* Ensures 3 columns on large desktop screens */
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

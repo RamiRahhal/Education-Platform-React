@@ -1,0 +1,163 @@
+/* General Styles (Default for Desktop) */
+.home {
+    background-color: #B8DDE3;
+}
+.home-heading {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 15%;
+}
+
+.form-control {
+    width: 13rem;
+    height: 45px;
+}
+.girl {
+    height: 700px;
+}
+
+.bg-hero {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 700px;
+    right: 26%;
+}
+
+.hero {
+    position: relative;
+}
+
+.girl .btn-1 {
+    position: relative;
+    background-color: aliceblue;
+    top: -450px;
+    right: -400px;
+    width: 240px;
+    height: 50px;
+    border: none;
+}
+
+.girl .btn-2 {
+    position: relative;
+    background-color: aliceblue;
+    top: -450px;
+    right: 60px;
+    width: 240px;
+    height: 50px;
+    border: none;
+}
+
+.girl .btn-3 {
+    position: relative;
+    background-color: aliceblue;
+    top: -540px;
+    right: -60px;
+    width: 55px;
+    height: 55px;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    border: none;
+}
+
+.girl .btn-4 {
+    position: relative;
+    background-color: aliceblue;
+    top: -200px;
+    right: 200px;
+    width: 240px;
+    height: 50px;
+    border: none;
+}
+
+.icon-button {
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+.icon-button-book {
+    width: 40px;
+    height: 40px;
+    background-color: #5C6BC0;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-button-school {
+    width: 40px;
+    height: 40px;
+    background-color: #42A5F5;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+.text1-icon {
+    font-weight: 500;
+    text-align: left;
+}
+
+.text2-icon {
+    color: darkgray;
+    font-size: small;
+    display: flex;
+    text-align: left;
+    line-height: 1.2;
+}
+
+/* Mobile View Styles (Screen width up to 768px) */
+@media (max-width: 768px) {
+    .home-heading {
+        padding-left: 10%;
+        position: relative;
+        top: 50px;
+    }
+
+    .form-control {
+        width: 90%;
+        height: 40px;
+    }
+
+    .girl .btn-1,
+    .girl .btn-2,
+    .girl .btn-3,
+    .girl .btn-4 {
+        position: static;
+        margin: 10px 0;
+        margin-left: 5%;
+        width: 90%;
+        height: 45px;
+    }
+
+    .icon-button,
+    .icon-button-book,
+    .icon-button-school {
+        width: 35px;
+        height: 35px;
+        margin-right: 8px;
+    }
+
+    .text1-icon {
+        font-size: 14px;
+    }
+
+    .text2-icon {
+        font-size: 12px;
+    }
+}

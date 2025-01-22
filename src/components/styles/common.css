@@ -1,0 +1,194 @@
+/* ---------------Header------------------ */
+@media only screen and (max-width: 768px) {
+    header .open-menu {
+        display: block;
+    }
+
+    header .desktop-view {
+        display: none;
+    }
+
+    header .mobile-view {
+        display: block;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: 30vh;
+        background-color: #fff;
+        z-index: 55;
+    }
+
+    header .mobile-view ul {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+
+.fisrtHead {
+    padding-left: 150px;
+}
+
+.bi {
+    width: 75px;
+    height: 1.25rem;
+}
+
+.imgLogo {
+    width: 100%;
+    height: 100%;
+}
+
+.category {
+    padding-left: 20px;
+}
+
+.login {
+    padding-right: 140px;
+}
+
+.login .btn {
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+/* ---------------Footer------------------ */
+/* .install {
+    height: 180px;
+    background: linear-gradient(45deg, #4C6EF5, #FF6B6B);
+    width: 80%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.install h1 {
+    text-align: left;
+    color: beige;
+}
+
+.install .btn {
+    margin-top: 30px;
+}
+.install #apple {
+    margin-left: 100px;
+    border-color: white;
+    color: white;
+}
+.install #apple:hover {
+    background-color: white;
+    color: black;
+}
+
+.install #play {
+    margin-left: 40px;
+} */
+
+.install {
+    height: 180px;
+    background: linear-gradient(45deg, #4C6EF5, #FF6B6B);
+    width: 80%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    flex-direction: column; /* Stacked on mobile */
+    text-align: center; /* Centered text on mobile */
+    border-radius: 5px;
+    margin-top: 130px;
+    position: relative;
+}
+
+.install h1 {
+    color: beige;
+    text-align: center; /* Centered heading on mobile */
+    margin-bottom: 10px;
+}
+
+.install .btn {
+    margin-top: 30px;
+}
+
+.install #apple, .install #play {
+    margin-left: 0; /* Reset left margin */
+    border-color: white;
+    color: white;
+    margin-top: 10px; /* Add some margin on mobile */
+}
+
+.install #apple:hover, .install #play:hover {
+    background-color: white;
+    color: black;
+}
+
+.install #apple {
+    margin-left: 0;
+    padding: 10px 20px;
+}
+
+.install #play {
+    margin-left: 0;
+    padding: 10px 20px;
+}
+.footer {
+    padding-top: 100px !important;
+    background-color: #f3f4f8;
+    margin-bottom: 0px !important;
+    margin-top: -80px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Media Queries for Mobile (max-width 768px) */
+@media (max-width: 768px) {
+    .install {
+        width: 90%; /* Increase width on mobile */
+        height: auto; /* Adjust height for mobile */
+        flex-direction: column; /* Stack buttons vertically */
+        text-align: center; /* Center text */
+    }
+
+    .install #apple, .install #play {
+        margin-left: 0; /* Remove margin on smaller screens */
+        margin-right: 0; /* Remove margin on smaller screens */
+        width: 100%; /* Make buttons full width */
+        margin-top: 15px; /* Add some margin between buttons */
+    }
+
+    .install h1 {
+        font-size: 20px; /* Adjust font size for mobile */
+    }
+}
+
+/* Media Queries for Desktop (min-width 769px) */
+@media (min-width: 769px) {
+    .install {
+        width: 80%; /* Adjust width for desktop */
+        height: 180px; /* Maintain height for desktop */
+        flex-direction: row; /* Align buttons horizontally */
+        text-align: left; /* Align text to left */
+    }
+
+    .install h1 {
+        text-align: left;
+        font-size: 40px; /* Adjust font size for desktop */
+    }
+
+    .install #apple, .install #play {
+        margin-left: 40px; /* Add left margin for buttons */
+        width: auto; /* Reset button width */
+        margin-top: 25px; /* Reset margin for desktop */
+    }
+}
+
+
+
+
+
+
